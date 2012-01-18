@@ -1,9 +1,10 @@
 <h1>Welcome to MusicBachs</h1>
   <p>
-    Under construction...
+    Intent of the site is to explore various music service API's.  First up is Spotify.<br/>
+    Enter the artist name (or partial name) below to see what exists in the Spotify db.<br/>
     
-    <h2>Search</h2>
-    <% form_tag :action => 'search_artists' do %>
+    <h3>Artist Search</h3>
+    <% form_tag :action => 'search' do %>
       <%= search_field :myform, :artistext %>
       <%= submit_tag "Submit" %>
     <% end %>
