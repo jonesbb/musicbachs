@@ -1,0 +1,2 @@
+module SpotifySearchHelper
+end

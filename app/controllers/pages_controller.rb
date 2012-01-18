@@ -15,4 +15,8 @@ class PagesController < ApplicationController
     @title = "Search"
   end
 
+  def search_artists
+    artist_search_text = params['myform']['artistext']
+    #do your stuff with comments_from_form here
+  end
 end

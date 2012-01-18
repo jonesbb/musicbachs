@@ -1,4 +1,10 @@
 <h1>Welcome to MusicBachs</h1>
   <p>
     Under construction...
+    
+    <h2>Search</h2>
+    <% form_tag :action => 'search_artists' do %>
+      <%= search_field :myform, :artistext %>
+      <%= submit_tag "Submit" %>
+    <% end %>
   </p>
