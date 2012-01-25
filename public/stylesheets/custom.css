@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #999;
+  background: #2B3856;
 }
 
 header {
@@ -11,15 +11,16 @@ header {
 }
 
 header img {
-  padding: 1em;
-  background: #fff;
+  padding: 1px;
+  background: #2B3856;
 }
 
 section {
   margin-top: 1em;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #98AFC7;
 }
 
 section h1 {
@@ -49,7 +50,8 @@ nav {
 }
 
 nav {
-  background-color: white;
+  background-color: #2B3856;
+  font-family: 'Courier New', Courier, monospace;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -107,6 +109,7 @@ footer {
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 footer nav {
