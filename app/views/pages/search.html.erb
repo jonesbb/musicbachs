@@ -1,5 +1,24 @@
 <h1>Search Results</h1>
-<p> Still working on parsing the results into something more user friendly.<br /><br />
-There are <%= @qua %> results:<br />
-<%= @temp %><br/>
+<p>
+<% if @a_srch_txt.blank? %>
+  I can't read your mind.<br/>Try entering something into the <%= link_to "search box", root_path %>, and then clicking search.
+<% else %>
+There are <%= @qua %> results found in search for '<%= @a_srch_txt %>'<br />
+Follow an artist link to find them on Spotify.
+<table class="zebra">
+  <tr>
+    <td><u>Artist</u></td>
+    <td><u>Popularity</u></td>
+  </tr>
+<% @a_var.each_with_index do |artist, i| %>
+  <tr>
+    <td><a href ="<%= artist.uri %>"><%= artist.name %></a></td>
+    <td><%= artist.popularity %></td>
+    </tr>
+<% end %>
+</table>
+<% if @qua > 100 %>
+Only Printing First 100 Results because I'm lazy.<br/>(and you probably don't want to see it anyway)
+<% end %>
+<% end %>
 </p>

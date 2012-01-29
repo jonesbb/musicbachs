@@ -43,6 +43,7 @@ a:visited {
   color: #069;
 }
 
+
 /* Navigation */
 
 nav {
@@ -79,6 +80,48 @@ nav ul li a:visited {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
+/* Table */
+table.zebra
+{
+	margin: 45px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+table.zebra th
+{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #039;
+}
+table.zebra td
+{
+	padding: 8px;
+	color: #000;
+}
+table.zebra .odd
+{
+	background: #e8edff; 
+}
+
+/* Links in table */
+
+table.zebra a {
+  color: #000;
+  text-decoration: none;
+}
+
+table.zebra a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+table.zebra a:visited {
+  color: #069;
+}
+
 
 /* Sign up button */
 
