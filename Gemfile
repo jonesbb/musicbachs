@@ -9,11 +9,6 @@ gem 'sqlite3'
 gem 'meta-spotify'
 gem 'heroku'
 
-# Gems for Twilio Sample App
-gem 'builder'
-gem 'hpricot'
-gem 'twilio-ruby'
-#gem 'sinatra'
 
 
 # Use unicorn as the web server
