@@ -2,7 +2,6 @@ Musicbachs::Application.routes.draw do
   #get "spotify_search/artist"
 
   #get "spotify_search/album"
-  get '/public'
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
